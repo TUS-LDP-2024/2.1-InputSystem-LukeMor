@@ -839,7 +839,7 @@ PlayerSettings:
   m_RenderingPath: 1
   m_MobileRenderingPath: 1
   metroPackageName: 2.1-InputSystem-LukeMor
-  metroPackageVersion: 
+  metroPackageVersion: 1.0.0.0
   metroCertificatePath: 
   metroCertificatePassword: 
   metroCertificateSubject: 
@@ -847,7 +847,7 @@ PlayerSettings:
   metroCertificateNotAfter: 0000000000000000
   metroApplicationDescription: 2.1-InputSystem-LukeMor
   wsaImages: {}
-  metroTileShortName: 
+  metroTileShortName: 2.1-InputSystem-LukeMor
   metroTileShowName: 0
   metroMediumTileShowName: 0
   metroLargeTileShowName: 0

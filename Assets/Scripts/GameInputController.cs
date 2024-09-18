@@ -5,8 +5,12 @@ using UnityEngine.InputSystem;
 
 public class GameInputController : MonoBehaviour
 {
-    public Rigidbody rb;
-    public float MoveSpeed;
+    public Vector2 movement;
+    public bool isMoving;
+    public Vector2 looking;
+    public bool isLooking;
+    public bool grow;
+
 
     // Start is called before the first frame update
     void Start()
@@ -14,10 +18,28 @@ public class GameInputController : MonoBehaviour
         
     }
 
+    private void OnGrow(InputValue value)
+    {
+        if (value.isPressed)
+        {
+            grow = true;
+        }
+        else
+        {
+            grow = false;
+        }
+    }
+
     public void OnMove(InputValue value)
     {
-        rb.velocity = value.Get<Vector2>() * MoveSpeed;
+        movement = value.Get<Vector2>();
     }
+
+    private void OnLook(InputValue value)
+    {
+        looking = value.Get<Vector2>();
+    }
+
 
     // Update is called once per frame
     void Update()
